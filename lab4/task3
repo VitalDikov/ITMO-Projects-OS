@@ -33,7 +33,7 @@ else
 	echo "Backup-$CurDate"
 	} >> $HOME/backup-report
 	NewNames="NEW FILES:"
-	NamePairs="FILES REPLACED"
+	NamePairs="FILES REPLACED:"
 	for file in $(ls $HOME/source); do
 		if [[ -f "$LastBackupName/$file" ]]; then
 			NewNames=$(printf "$NewNames\n$file")
