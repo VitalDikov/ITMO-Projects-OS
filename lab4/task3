@@ -1,21 +1,20 @@
 #!/bin/bash
 
-if [[ ! -d "$HOME/source"]]; then
+if [[ ! -d "$HOME/source" ]]; then
 	echo "Source file does not exist"
 	exit 1
 fi
 
-if [[ ! -f "$HOME/backup-report"]]; then
+if [[ ! -f "$HOME/backup-report" ]]; then
 	touch $HOME/backup-report
 fi
 
 CurDate=$(date +"%Y-%m-%d")
 CurName=$(echo "$HOME/Backup-$CurDate")
 
-LastBackupDate=$(ls ~ | grep -E "^Backup-" | sort -n | tail -l | sed "s/Backup-//")
-LastBackupName="$HOME/Backup-$LastBackupDate"
 
-echo  "$CurDate $LastBackupDate"
+LastBackupDate=$(ls ~ | grep -E "^Backup-" | sort -n | tail -1 | sed "s/Backup-//")
+LastBackupName="$HOME/Backup-$LastBackupDate"
 
 delta=$(( $(date --date "$CurDate" +%d) - $(date --date "$LastBackupDate" +%d) ))
 
@@ -41,7 +40,7 @@ else
 			size1=$(wc -c "$HOME/source/$file" | awk '{print $1}')
 			size2=$(wc -c "$LastBackupName/$file" |awk '{print $1}')
 
-			if (( $(echo "$size1 - $size2" | bc) == 0 )); then
+			if (( $(echo "$size1 - $size2" | bc) != 0 )); then
 				cp "$HOME/source/$file" "$LastBackupName/$file.$CurDate"
 				NamePairs=$(printf "$NamePairs\n$file $file.$CurDate")
 			fi
@@ -50,6 +49,7 @@ else
 	{
 	printf "$NewNames\n"
 	printf "$NamePairs\n"
+	printf "\n"
 	} >> $HOME/backup-report
 fi
 
