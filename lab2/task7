@@ -1,0 +1,33 @@
+#!/bin/bash
+
+check(){
+#ps aux | awk '{if ($6 != 0) print ""$2" "$6" "$11""}' | sort -nk1 | tail -n +2 | head -n -6
+	path=$(ls /proc |awk '$0 !~ /[A-Za-z]/')
+	processes=$(echo $path | tr " " "\n")
+	for pid in $processes
+	do
+		echo $pid" "$(grep "read_bytes:" "/proc/"$pid"/io" | awk '{print $2}')
+	done
+}
+#fileio
+
+check > tmp1.txt
+sleep 10
+check > tmp2.txt
+
+echo "" > file7.out 
+
+cat tmp1.txt |
+while read a
+do
+pid=$(awk '{print $1}' <<< $a)
+memory1=$(awk '{print $2}' <<< $a)
+memory2=$(cat tmp2.txt | awk -v pid1="$pid" '{if ($1 == pid1) print $2}')
+if [[ ! -z $memory2 ]];then
+	memory=$(echo "$memory2-$memory1" | bc)
+	
+echo $memory2"-"$memory1
+#	echo "$pid : $memory"
+fi
+done | sort -t ':' -rnk3 | head -3
+#dir proc

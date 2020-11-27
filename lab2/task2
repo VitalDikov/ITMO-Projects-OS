@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ps -e -o  pid,command | grep "/sbin/" | awk '{if (!($2 ~ /^\/usr\//)) print $1}' > file2.out
+#надо /sbin/ без usr

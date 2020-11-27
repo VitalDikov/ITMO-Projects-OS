@@ -1,0 +1,18 @@
+#!/bin/bash
+
+./endless&pid0=$!
+./endless&pid1=$!
+./endless&pid2=$!
+
+renice 20 -p $pid0
+
+top -o %CPU
+
+kill ${pid2}
+
+top -o %CPU
+
+kill ${pid0} ; kill ${pid1} 
+
+
+

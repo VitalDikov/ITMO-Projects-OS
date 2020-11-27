@@ -1,0 +1,10 @@
+#!bin/bash
+out=""
+read line
+while ( [ "$line" != "q" ] )
+do
+	out="$out$line" 
+	read line
+done
+echo $out
+

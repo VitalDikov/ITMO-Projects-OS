@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+pid=$1
+limit=10
+
+top -n 1
+
+while true; do
+	curCPU=$(top -p $pid -b -n 1 | tail -n 1 | awk '{print $9}')
+	curPRI=$(top -p $pid -b -n 1 | tail -n 1 | awk '{print $4}')
+	echo "_________$curCPU"
+	if [ 1 -eq "$(echo "];then
+		curPRI=$(echo "$curPRI+1" | awk '{print $0}' | bc)
+		renice -p $pid -n curPRI
+	fi
+done	

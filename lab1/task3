@@ -1,0 +1,12 @@
+echo "1. Open nano"
+echo "2. Open vi"
+echo "3. Open links"
+echo "4. Exit"
+read com
+case "$com" in
+	"1") nano;;
+	"2") vi;;
+	"3") links;;
+	"4") exit 0;;
+esac
+

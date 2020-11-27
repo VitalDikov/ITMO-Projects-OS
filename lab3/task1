@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cur=$(date '+%d.%m.%y_%H:%M:%S')
+
+mkdir ~/test && {echo "Catalog test was created Successfully"} >> ~/report ; touch {~/test/$cur.tmp}
+ping -c 1 www.net_nikogo.ru || echo ""$cur" ping error" >> ~/report.tmp

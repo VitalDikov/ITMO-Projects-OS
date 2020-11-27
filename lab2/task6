@@ -1,0 +1,5 @@
+#!/bin/bash
+grep "VmRSS" /proc/*/status | sort -rnk2 | head -n1 | sed "s/[^0-9]\+/ /g" | awk '{print "PID="$1"  Memory="$2""}'
+echo "TOP result"
+
+top -o %MEM | head -8 | tail -n +8 | awk '{print "PID="$2" Memory="$7""}'

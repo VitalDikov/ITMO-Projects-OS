@@ -1,0 +1,31 @@
+#!/bin/bash
+
+operator="+"
+num=1
+
+(tail -f pipe) |
+while true; do
+	read line
+	case $line in
+		"QUIT")
+			killall tail
+			exit 0
+			;;
+		"*")
+			operator="*"
+			;;
+		"+")
+			operator="+"
+			;;
+		*)
+			
+			if [[ $operator == "+" ]]; then
+				num=$(echo "$num+$line" | bc | awk '{printf "%f", $0}')
+			else
+				num=$(echo "$num*$line" | bc | awk '{printf "%f", $0}')
+			fi
+			echo "$num"
+			;;
+		
+	esac
+done

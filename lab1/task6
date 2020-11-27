@@ -1,0 +1,6 @@
+#!/bin/bash
+
+awk '$3 == "(WW)" {print $0}' /var/log/anaconda/X.log | sed 's/(WW)/Warning:/'	> ful.log
+
+awk '$3 == "(II)" {print $0}' /var/log/anaconda/X.log | sed 's/(II)/Inforamtion:/' >> ful.log
+cat ful.log

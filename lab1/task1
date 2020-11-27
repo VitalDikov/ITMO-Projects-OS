@@ -1,0 +1,14 @@
+#!bin/bash
+if [[ "$#" -ne 3 ]]
+then echo "Enter 3 numbers"
+exit
+fi
+
+max=$1
+if [[ "$1" -lt "$2" ]]
+then max=$2
+fi
+if [[ "$max" -lt "$3" ]]
+then max=$3
+fi
+echo $max

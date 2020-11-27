@@ -1,0 +1,9 @@
+#!/bin/bash
+
+LastBackupDate=$( ls $HOME | grep -E "^Backup-" | sort -n | tail -l | sed 's/^Backup-//')
+LastBackupName="$HOME/Backup-$LastBackupDate"
+
+for file in $(ls $LastBackupNaMe | grep -E "\.[0-9]{4}-[0-9]{2}-[0-9]{2}$"); do
+	echo $file
+done
+echo $second
