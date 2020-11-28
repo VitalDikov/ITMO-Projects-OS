@@ -1,0 +1,19 @@
+#!/bin/bash
+
+./mem.bash&pid0=$!
+
+rm table
+
+echo $pid0
+
+for ((;;)) do
+	line=$(top -o %MEM | head -8 | tail -n +8 )
+	free=$(top -o %MEM | head -4 | tail -n +4 | awk '{print ""$6""}')
+	
+	if [[ $(echo $line | awk '{print ""$2""}' ) == $pid0 ]]; then
+		
+		line=$(echo $line | awk '{print ""$12" "$11" "$10""}')
+		line=$(echo "$line $free")
+		echo $line >> table
+	fi
+done
