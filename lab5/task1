@@ -3,7 +3,7 @@
 ./mem.bash&pid0=$!
 
 rm table
-
+echo  "Time,sec MEM,% CPU,% free MEM" >> table
 echo $pid0
 
 for ((;;)) do
@@ -12,8 +12,8 @@ for ((;;)) do
 	
 	if [[ $(echo $line | awk '{print ""$2""}' ) == $pid0 ]]; then
 		
-		line=$(echo $line | awk '{print ""$12" "$11" "$10""}')
-		line=$(echo "$line $free")
-		echo $line >> table
+		line=$(echo -e $line | awk '{print ""$12"\t"$11"\t"$10""}')
+		line=$(echo -e "$line\t$free")
+		echo -e $line >> table
 	fi
 done
