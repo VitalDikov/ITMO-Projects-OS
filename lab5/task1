@@ -9,11 +9,10 @@ echo $pid0
 for ((;;)) do
 	line=$(top -o %MEM | head -8 | tail -n +8 )
 	free=$(top -o %MEM | head -4 | tail -n +4 | awk '{print ""$6""}')
-	
+
 	if [[ $(echo $line | awk '{print ""$2""}' ) == $pid0 ]]; then
-		
-		line=$(echo -e $line | awk '{print ""$12"\t"$11"\t"$10""}')
-		line=$(echo -e "$line\t$free")
-		echo -e $line >> table
+		line=$(echo -e $line | awk '{print ""$12";"$11";"$10""}')
+		line=$(echo -e "$line;$free\n")
+		echo $line >> table
 	fi
 done
