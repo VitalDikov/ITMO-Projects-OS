@@ -3,7 +3,7 @@
 ./mem.bash&pid0=$!
 
 rm table
-echo  "Time,sec MEM,% CPU,% free MEM" >> table
+echo  "Time MEM Virt Res SHR CPU free" >> table
 echo $pid0
 
 for ((;;)) do
