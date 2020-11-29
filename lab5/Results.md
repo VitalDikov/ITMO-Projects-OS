@@ -5,6 +5,7 @@
     Вывод консоли после запуска ./mem.bash
     ![image](https://user-images.githubusercontent.com/71635718/100531138-932a8b00-320b-11eb-9201-409be10fe236.png)
     Значение последней строки report.log: 1'600'000
+    ![image](https://user-images.githubusercontent.com/71635718/100532854-d33f3d00-320e-11eb-889b-bbdb9c79933b.png)
     
     
     
