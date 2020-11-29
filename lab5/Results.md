@@ -3,8 +3,9 @@
 Эксперимент 1:
   Первый этап:
     Вывод консоли после запуска ./mem.bash
-    ![image](https://user-images.githubusercontent.com/71635718/100530961-9c1a5d00-3209-11eb-84a4-d367c298dc48.png)
-
+    ![image](https://user-images.githubusercontent.com/71635718/100531138-932a8b00-320b-11eb-9201-409be10fe236.png)
+    Значение последней строки report.log: 1'600'000
+    
     
     
     
