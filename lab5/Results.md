@@ -3,6 +3,8 @@
 Эксперимент 1:
   Первый этап:
     Вывод консоли после запуска ./mem.bash
+    ![image](https://user-images.githubusercontent.com/71635718/100530961-9c1a5d00-3209-11eb-84a4-d367c298dc48.png)
+
     
     
     
