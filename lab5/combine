@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./task1_1&pid0=$!
+./task1_2&pid1=$!
+
+echo "task1_1: $pid0 task1_2: $pid1"

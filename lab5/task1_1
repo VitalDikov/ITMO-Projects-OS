@@ -4,15 +4,12 @@
 
 rm table1_1
 echo  "Time MEM Virt Res SHR CPU free" >> table1_1
-echo $pid0
+echo "mem.bash $pid0"
 
 for ((;;)) do
-	line=$(top -o %MEM | head -8 | tail -n +8 )
-	free=$(top -o %MEM | head -4 | tail -n +4 | awk '{print ""$6""}')
-
-	if [[ $(echo $line | awk '{print ""$2""}' ) == $pid0 ]]; then
-		line=$(echo -e $line | awk '{print ""$12" "$11" "$6" "$7" "$8" "$10""}')
-		line=$(echo -e "$line $free\n")
-		echo $line >> table1_1
-	fi
+	line=$(top -p $pid0 -b -n 1 | head -8 | tail -n +8 )
+	free=$(top -o %MEM -b -n 1 | head -4 | tail -n +4 | awk '{print ""$6""}')
+	line=$(echo -e $line | awk '{print ""$12" "$11" "$6" "$7" "$8" "$10""}')
+	line=$(echo -e "$line $free\n")
+	echo $line >> table1_1
 done
