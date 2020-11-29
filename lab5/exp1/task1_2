@@ -3,13 +3,14 @@
 ./mem2.bash&pid0=$!
 
 rm table1_2
-echo  "Time MEM Virt Res SHR CPU free" >> table1_2
+echo  "Time MEM Virt Res SHR CPU free swap" >> table1_2
 echo "mem2.bash $pid0"
 
 for ((;;)) do
-	line=$(top -p $pid0 -b -n 1| head -8 | tail -n +8 )
+	line=$(top -p $pid0 -b -n 1 | head -8 | tail -n +8 )
 	free=$(top -o %MEM -b -n 1 | head -4 | tail -n +4 | awk '{print ""$6""}')
+	swap=$(top -o %MEM -b -n 1 | head -5 | tail -n +5 | awk '{print ""$5""}')
 	line=$(echo -e $line | awk '{print ""$11" "$10" "$5" "$6" "$7" "$9""}')
-	line=$(echo -e "$line $free\n")
+	line=$(echo -e "$line $free $swap\n")
 	echo $line >> table1_2
 done
