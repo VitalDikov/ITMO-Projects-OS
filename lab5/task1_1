@@ -2,8 +2,8 @@
 
 ./mem.bash&pid0=$!
 
-rm table
-echo  "Time MEM Virt Res SHR CPU free" >> table
+rm table1_1
+echo  "Time MEM Virt Res SHR CPU free" >> table1_1
 echo $pid0
 
 for ((;;)) do
@@ -13,6 +13,6 @@ for ((;;)) do
 	if [[ $(echo $line | awk '{print ""$2""}' ) == $pid0 ]]; then
 		line=$(echo -e $line | awk '{print ""$12" "$11" "$6" "$7" "$8" "$10""}')
 		line=$(echo -e "$line $free\n")
-		echo $line >> table
+		echo $line >> table1_1
 	fi
 done
