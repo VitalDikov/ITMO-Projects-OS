@@ -9,7 +9,7 @@ echo "mem.bash $pid0"
 for ((;;)) do
 	line=$(top -p $pid0 -b -n 1 | head -8 | tail -n +8 )
 	free=$(top -o %MEM -b -n 1 | head -4 | tail -n +4 | awk '{print ""$6""}')
-	line=$(echo -e $line | awk '{print ""$12" "$11" "$6" "$7" "$8" "$10""}')
+	line=$(echo -e $line | awk '{print ""$11" "$10" "$5" "$6" "$7" "$9""}')
 	line=$(echo -e "$line $free\n")
 	echo $line >> table1_1
 done
