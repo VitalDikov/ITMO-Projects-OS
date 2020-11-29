@@ -8,6 +8,7 @@
     ![image](https://user-images.githubusercontent.com/71635718/100532854-d33f3d00-320e-11eb-889b-bbdb9c79933b.png)
     результаты вывода dmesg | grep "mem.bash"
     ![image](https://user-images.githubusercontent.com/71635718/100532900-7db76000-320f-11eb-9a79-437444ea59c8.png)
+  Второй этап:
     
     
     
