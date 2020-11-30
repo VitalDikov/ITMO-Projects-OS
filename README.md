@@ -10,6 +10,6 @@
 
 # Полезная информация
 
-  * [Мануал по bash-скриптам](./Bash Manual.md)
+  * [Мануал по bash-скриптам](https://github.com/VitalDikov/ITMO-Projects-OS/blob/master/Bash%20Manual.md)
   * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
   * [Документация](https://www.opennet.ru/man.shtml)
