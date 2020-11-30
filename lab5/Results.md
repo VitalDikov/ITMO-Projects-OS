@@ -17,6 +17,12 @@
 ![image](https://user-images.githubusercontent.com/71635718/100557397-efe47f00-32b9-11eb-85e8-884791184b60.png)![image](https://user-images.githubusercontent.com/71635718/100558133-17d5e180-32be-11eb-85fd-b5780fa7a8fe.png)![image]
 (данные можно найти в файлах формата "^table" или здесь, в более читабельном формате)
 
+
+![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+
+
+
+
 По результатам второго эксперимента с помощью алгоритма бинарного поиска было полученно, что граничное значение рамзера массива, выделенного на процесс находится в промежутке между 1'086'812-1'086'875 (общий размер 32'604'360-32'606'350)
 
 Обработка результатов и выводы:
