@@ -9,4 +9,6 @@
 
 
 ## Полезная информация
-  [Мануал по bush-скриптам](./Bush-Manual.md)
+  . [Мануал по bash-скриптам](./Bash Manual.md)
+  . [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+  . [Документация](https://www.opennet.ru/man.shtml)
