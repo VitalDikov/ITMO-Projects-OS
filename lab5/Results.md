@@ -9,7 +9,7 @@
 ![image](https://user-images.githubusercontent.com/71635718/100548212-31563980-327c-11eb-9375-f9835dc7709d.png)
 
 > После переполнения памяти одновременно запущенными скриптами **mem.bash** и **mem2.bash** в логах
-с помощью команды **dmesg | grep "mem[2]*.bash"** были получены записи: <
+с помощью команды **dmesg | grep "mem[2]*.bash"** были получены записи:
 
 ![image](https://user-images.githubusercontent.com/71635718/100549804-30c2a080-3286-11eb-9d41-cb226842043c.png)
 
