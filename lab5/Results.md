@@ -19,7 +19,7 @@
 
 |               | Center Aligned  | Right Aligned |
 | :-----------: |:---------------:| :-----:|
-| mem.bash (первый этап) | some wordy text | $1600 |
+| mem.bash \n (первый этап) | some wordy text | $1600 |
 | col 2 is      | centered        |   $12 |
 | zebra stripes | are neat        |    $1 |
 
