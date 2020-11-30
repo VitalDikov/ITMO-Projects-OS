@@ -8,7 +8,8 @@
 6. [Лабораторная работа №6:](https://drive.google.com/file/d/1Lnwz8SDRfU2eTREUkp5WGhMW_KS0sVUW/view) **Консольный интерфейс ОС WINDOWS**
 
 
-## Полезная информация
+# Полезная информация
+
   * [Мануал по bash-скриптам](./Bash Manual.md)
   * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
   * [Документация](https://www.opennet.ru/man.shtml)
