@@ -36,20 +36,25 @@ else
 	NamePairs="FILES REPLACED:"
 	for file in $(ls $HOME/source); do
 		if [[ -f "$LastBackupName/$file" ]]; then
-			NewNames=$(printf "$NewNames\n$file")
 			size1=$(wc -c "$HOME/source/$file" | awk '{print $1}')
 			size2=$(wc -c "$LastBackupName/$file" |awk '{print $1}')
 
 			if (( $(echo "$size1 - $size2" | bc) != 0 )); then
-				cp "$HOME/source/$file" "$LastBackupName/$file.$CurDate"
+				mv "$LastBackupName/$file" "$LastBackupName/$file.$CurDate"
+				cp "$HOME/source/$file" "$LastBackupName/$file"
+				NewNames=$(printf "NewNames\n$file")
 				NamePairs=$(printf "$NamePairs\n$file $file.$CurDate")
 			fi
+		else 
+			cp "$HOME/source/$file" "$LastBackupName/$file"
+			NewNames=$(printf "$NewNames\n$file")
 		fi		
 	done
 	{
 	printf "$NewNames\n"
 	printf "$NamePairs\n"
-	printf "\n"
+
 	} >> $HOME/backup-report
 fi
+printf "\n" >> $HOME/backup-report
 

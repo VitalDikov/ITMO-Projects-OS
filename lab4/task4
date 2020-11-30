@@ -13,9 +13,10 @@ if [[ ! -d $HOME/restore ]]; then
 fi
 
 for file in $(ls $LastBackupName); do
-	later=$(ls $LastBackupName | grep -E "^"$file."[0-9]{4}-[0-9]{2}-[0-9]{2}$")
-	if [[ $later != "" ]]; then
+	IsLater=$(echo $file | grep -E "[0-9]{4}-[0-9]{2}-[0-9]{2}$")
+	if [[ $IsLater != "" ]]; then
 		continue
 	fi
 	cp "$LastBackupName/$file" "$HOME/restore/$file"
+	echo $file
 done

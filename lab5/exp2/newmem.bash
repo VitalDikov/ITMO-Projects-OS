@@ -11,6 +11,9 @@ while [[ true ]]; do
 	arr+=(1 2 3 4 5 6 7 8 9 10)
 #	echo "${#arr[@]}"
 	if (( "${#arr[@]}" >= "$N" ));	then
+		echo "Я выполнился удачно)))0)"
 		exit 0
 	fi
 done
+
+

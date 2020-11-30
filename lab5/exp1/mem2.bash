@@ -10,3 +10,5 @@ while [[ true ]]; do
 		echo ${#arr[@]} >> report2.log
 	fi
 done
+
+echo "Я выполнился удачно)))0)"

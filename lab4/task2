@@ -13,10 +13,19 @@ if [[ ! -d $"$HOME/.trash" ]]; then
 	exit 1
 fi
 
-if [[ ! -f $"$HOME/.trash/.log" ]]; then
-	echo "Trash/.log doesn't exist"
+if [[ ! -f $"$HOME/.trash.log" ]]; then
+	echo "Trash.log doesn't exist"
 	exit 1
 fi
+
+slash='/'
+
+if [[ "$FILENAME" == *"$slash"* ]]; then
+	echo "No full path please"
+	exit 1
+fi
+
+
 
 while read LINE
 do 
@@ -56,9 +65,17 @@ if ! [ -d $(dirname "$FULLNAME") ]; then
 	esac
 fi
 
+if [[ ! -f "$HOME/.trash/$LOGNAME" ]]; then
+	echo "File was already restored"
+	exit 1
+fi
+
+
 { #try
 	ln "$HOME/.trash/$LOGNAME" "$FULLNAME" 
-} || { #catch
+} 2>/dev/null || { #catch
 	read -p "File could not be saved. Enter new File name: " answer <&1
 	ln "$HOME/.trash/$LOGNAME" "$(dirname "$FULLNAME")/$answer"
 }
+
+rm "$HOME/.trash/$LOGNAME"
