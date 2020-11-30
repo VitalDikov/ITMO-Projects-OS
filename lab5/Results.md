@@ -17,23 +17,12 @@
 ![image](https://user-images.githubusercontent.com/71635718/100549804-30c2a080-3286-11eb-9d41-cb226842043c.png)
 
 
-| Left-Aligned  | Center Aligned  | Right Aligned |
+|               | Center Aligned  | Right Aligned |
 | :-----------: |:---------------:| :-----:|
-| col 3 is      | some wordy text | $1600 |
+| mem.bash (первый этап) | some wordy text | $1600 |
 | col 2 is      | centered        |   $12 |
 | zebra stripes | are neat        |    $1 |
 
-
-
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
-| zebra stripes | are neat        |    $1 |
 
 Для **mem2.bash**: размер созданного массива **32'000'000**, использованная память: **2'642'972kb**
 
