@@ -1,6 +1,6 @@
 # Лабораторная работа №5
 
-[Отчет]:https://docs.google.com/document/d/1vamgDlhe3BAYDOGDEuuIM1HqxaPgBW5m4JpbCIluLxY/edit?usp=sharing
+[Отчет]:https://github.com/VitalDikov/ITMO-Projects-OS/edit/master/lab5/Results.md
 ### [Отчет]
 
 ##### Эксперимент №1
