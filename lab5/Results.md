@@ -1,6 +1,6 @@
 # Результаты эксперимента
 
-После переполнения [GitHub Pages](https://pages.github.com/) памяти скриптом mem.bash на консоль была выведена следующая ошибка:
+После переполнения памяти скриптом mem.bash на консоль была выведена следующая ошибка:
 ![image](https://user-images.githubusercontent.com/71635718/100548169-fce27d80-327b-11eb-8b88-7f74dc7f4dfb.png)
 В логах ошибки командой dmesg | grep "mem.bash" было получено сообщение:
 ![image](https://user-images.githubusercontent.com/71635718/100548212-31563980-327c-11eb-9375-f9835dc7709d.png)
@@ -16,7 +16,7 @@
 #### Анализ данных, полученных из top:
 ![image](https://user-images.githubusercontent.com/71635718/100557397-efe47f00-32b9-11eb-85e8-884791184b60.png)![image](https://user-images.githubusercontent.com/71635718/100558133-17d5e180-32be-11eb-85fd-b5780fa7a8fe.png)
 
->                   данные можно найти в файлах формата **"^table"** или [GitHub Pages](https://pages.github.com/), в более читабельном формате
+                   данные можно найти в файлах формата **"^table"** или [GitHub Pages](https://pages.github.com/), в более читабельном формате
 
 
 
