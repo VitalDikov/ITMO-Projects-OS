@@ -9,6 +9,6 @@
 
 
 ## Полезная информация
-  . [Мануал по bash-скриптам](./Bash Manual.md)
-  . [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-  . [Документация](https://www.opennet.ru/man.shtml)
+  * [Мануал по bash-скриптам](./Bash Manual.md)
+  * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+  * [Документация](https://www.opennet.ru/man.shtml)
