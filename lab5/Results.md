@@ -1,12 +1,11 @@
 # Результаты эксперимента
 
-После переполнения памяти скриптом mem.bash на консоль была выведена следующая ошибка:
+После переполнения [GitHub Pages](https://pages.github.com/) памяти скриптом mem.bash на консоль была выведена следующая ошибка:
 ![image](https://user-images.githubusercontent.com/71635718/100548169-fce27d80-327b-11eb-8b88-7f74dc7f4dfb.png)
 В логах ошибки командой dmesg | grep "mem.bash" было получено сообщение:
 ![image](https://user-images.githubusercontent.com/71635718/100548212-31563980-327c-11eb-9375-f9835dc7709d.png)
 Размер созданного массива (последняя строка report.log): 32'000'000, использованная память: 2'641'784kb
 
-[GitHub Pages](https://pages.github.com/)
 
 После переполнения памяти одновременно запущенными скриптами mem.bash и mem2.bash в логах с помощью команды dmesg | grep "mem[2]*.bash" были получены записи:
 ![image](https://user-images.githubusercontent.com/71635718/100549804-30c2a080-3286-11eb-9d41-cb226842043c.png)
