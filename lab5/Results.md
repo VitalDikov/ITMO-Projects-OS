@@ -28,6 +28,11 @@
 | Left-Aligned  | Center Aligned  | Right Aligned |
 | col 3 is      | some wordy text | $1600 |
 | col 2 is      | centered        |   $12 |
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
 | zebra stripes | are neat        |    $1 |
 
 Для **mem2.bash**: размер созданного массива **32'000'000**, использованная память: **2'642'972kb**
