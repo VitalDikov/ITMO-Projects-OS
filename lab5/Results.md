@@ -13,13 +13,9 @@
 Размер массива. созданного mem.bash: 16'000'000, использованная память: 1'479'784kb
 
 
-Анализ данных, полученных из top:
-![](https://user-images.githubusercontent.com/71635718/100557397-efe47f00-32b9-11eb-85e8-884791184b60.png)![image](https://user-images.githubusercontent.com/71635718/100558133-17d5e180-32be-11eb-85fd-b5780fa7a8fe.png)![image]
-(данные можно найти в файлах формата "^table" или здесь, в более читабельном формате)
-
-
+####Анализ данных, полученных из top:
 ![image](https://user-images.githubusercontent.com/71635718/100557397-efe47f00-32b9-11eb-85e8-884791184b60.png)![image](https://user-images.githubusercontent.com/71635718/100558133-17d5e180-32be-11eb-85fd-b5780fa7a8fe.png)
-
+(данные можно найти в файлах формата "^table" или здесь, в более читабельном формате)
 
 
 
