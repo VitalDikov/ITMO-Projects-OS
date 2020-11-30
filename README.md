@@ -6,3 +6,7 @@
 4. [Лабораторная работа №4:](https://drive.google.com/file/d/10rCDiMC19coX2lZkGC8gOv8JmSd6L0Nl/view) **Работа с файлово-каталожной системой в ОС Linux**
 5. [Лабораторная работа №5:](https://drive.google.com/file/d/1N9JZKzWwMzpC8QdZ0-mY-ib9qouAy_Ua/view) **Управление памятью в ОС Linux**
 6. [Лабораторная работа №6:](https://drive.google.com/file/d/1Lnwz8SDRfU2eTREUkp5WGhMW_KS0sVUW/view) **Консольный интерфейс ОС WINDOWS**
+
+
+## Полезная информация
+  [Мануал по bush-скриптам](./Manual.md)
