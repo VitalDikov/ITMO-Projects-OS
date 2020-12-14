@@ -1,0 +1,13 @@
+Comparing files nets.txt and NETS2.TXT
+***** nets.txt
+   Workstation
+
+        ddddddddd
+
+
+   Пользовательская служба push-уведомлений Windows_7bb1d
+***** NETS2.TXT
+   Workstation
+   Пользовательская служба push-уведомлений Windows_7bb1d
+*****
+

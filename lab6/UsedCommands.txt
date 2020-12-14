@@ -1,0 +1,7 @@
+getinfo.bat
+mkdir TEST
+copy . TEST
+cd TEST
+nul > AllFiles.txt
+copy . .\AllFiles.txt
+delete.bat

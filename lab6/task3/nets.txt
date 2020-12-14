@@ -1,0 +1,120 @@
+These Windows services are started:
+
+   AlpsAlpine HID Monitor Service
+   AMD External Events Utility
+   Application Information
+   Avast Antivirus
+   Avast Tools
+   AvastWscReporter
+   AVCTP service
+   Background Tasks Infrastructure Service
+   Base Filtering Engine
+   Bluetooth Audio Gateway Service
+   Bluetooth Support Service
+   Capability Access Manager Service
+   Certificate Propagation
+   CNG Key Isolation
+   COM+ Event System
+   Computer Browser
+   Connected Devices Platform Service
+   CoreMessaging
+   Credential Manager
+   Cryptographic Services
+   Data Usage
+   DbxSvc
+   DCOM Server Process Launcher
+   Device Association Service
+   DHCP Client
+   Diagnostic Policy Service
+   Diagnostic Service Host
+   Display Enhancement Service
+   Display Policy Service
+   Distributed Link Tracking Client
+   DNS Client
+   Dolby DAX API Service
+   DU Meter Service
+   Fortemedia APO Control Service
+   Function Discovery Provider Host
+   Geolocation Service
+   Human Interface Device Service
+   IKE and AuthIP IPsec Keying Modules
+   Internet Connection Sharing (ICS)
+   IP Helper
+   Local Session Manager
+   Microsoft Store Install Service
+   Network Connection Broker
+   Network List Service
+   Network Location Awareness
+   Network Store Interface Service
+   Phone Service
+   Plug and Play
+   Power
+   Print Spooler
+   Program Compatibility Assistant Service
+   Radio Management Service
+   Realtek Audio Universal Service
+   Realtek Bluetooth Device Manager Service
+   Remote Access Connection Manager
+   Remote Desktop Configuration
+   Remote Desktop Services
+   Remote Desktop Services UserMode Port Redirector
+   Remote Procedure Call (RPC)
+   RPC Endpoint Mapper
+   Secure Socket Tunneling Protocol Service
+   Security Accounts Manager
+   Security Center
+   Server
+   Shell Hardware Detection
+   SQL Server (SQLEXPRESS)
+   SQL Server CEIP service (SQLEXPRESS)
+   SQL Server, службы синхронизации контроля версий
+   SSDP Discovery
+   State Repository Service
+   Steam Client Service
+   Storage Service
+   SysMain
+   System Event Notification Service
+   System Events Broker
+   System Guard Runtime Monitor Broker
+   Task Scheduler
+   TCP/IP NetBIOS Helper
+   TeamViewer
+   Themes
+   Time Broker
+   Touch Keyboard and Handwriting Panel Service
+   Update Orchestrator Service
+   User Manager
+   User Profile Service
+   Web Account Manager
+   Windows Audio
+   Windows Audio Endpoint Builder
+   Windows Connect Now - Config Registrar
+   Windows Connection Manager
+   Windows Defender Firewall
+   Windows Event Log
+   Windows Font Cache Service
+   Windows Image Acquisition (WIA)
+   Windows Management Instrumentation
+   Windows Push Notifications System Service
+   Windows Search
+   Windows Security Service
+   Windows Update
+   WinHTTP Web Proxy Auto-Discovery Service
+   Wireless Keyboard 850 Notification Service
+   WLAN AutoConfig
+   Workstation
+
+	ddddddddd
+
+
+   Пользовательская служба push-уведомлений Windows_7bb1d
+   Пользовательская служба буфера обмена_7bb1d
+   Синхронизация узла_7bb1d
+   Служба доступа к данным пользователя_7bb1d
+   Служба контактных данных_7bb1d
+   Служба поддержки пользователей Bluetooth_7bb1d
+   Служба пользователя платформы подключенных устройств_7bb1d
+   Служба хранения данных пользователя_7bb1d
+
+The command completed successfully.
+
